@@ -1,0 +1,43 @@
+.scroll-box {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+  }
+
+  .scroll-box section {
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+  }
+
+  .scroll-box section:nth-child(2) {
+    background-color: aquamarine;
+  }
+
+  .scroll-box section:nth-child(2) {
+    background-color: antiquewhite;
+  }
+
+  .scroll-box .content {
+    width: 50%;
+    text-align: center;
+  }
+
+  .scroll {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    max-height: 100vh !important;
+}
+
+.scroll-next {
+  position: relative; /* To make the margin-top work correctly */
+  margin-top: 300px; /* Initial margin-top value */
+  padding: 20px; /* Add padding for content spacing */
+  background-color: white; /* Set a background color to distinguish it */
+}

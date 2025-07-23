@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- sangu---- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    .pap-card {
+        border-radius: 0px 30px;
+        animation: border 6s linear infinite;
+    }
+
+    .pap-card img {
+        width: auto;
+        display: unset;
+    }
+
+    .tab-content>.active {
+        opacity: 1 !important;
+    }
+
+    @keyframes border {
+        0% {
+            border-radius: 0px 30px;
+        }
+
+        50% {
+            border-radius: 30px 0px;
+        }
+
+        100% {
+            border-radius: 0px 30px;
+        }
+    }
+
+
+
+    .card-1 {
+        box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        border: 0;
+    }
+
+
+
+    .primary-header {
+        background: linear-gradient(90deg, rgba(5, 56, 51, 1) 0%, rgba(182, 216, 214, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .primary-header2 {
+        padding: 50px 10px;
+        background: linear-gradient(90deg, rgba(60, 118, 214, 1) 0%, rgba(184, 206, 240, 1) 100%);
+    }
+
+    .primary-header3 {
+
+        padding: 50px 10px;
+        background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+
+    }
+
+    .primary-header4 {
+
+        background: linear-gradient(90deg, rgba(55, 78, 142, 1) 0%, rgba(165, 182, 215, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header5 {
+
+
+        background: linear-gradient(90deg, rgba(252, 45, 61, 1) 0%, rgba(249, 211, 217, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header6 {
+
+
+        background: linear-gradient(90deg, rgb(4, 228, 127) 0%, rgb(248, 248, 248) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header7 {
+
+
+        background: linear-gradient(90deg, rgb(120, 30, 30) 0%, rgba(204, 204, 204, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header8 {
+
+        background: linear-gradient(90deg, rgba(148, 32, 101, 1) 0%, rgba(234, 210, 224, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header9 {
+
+
+        background: linear-gradient(90deg, rgba(255, 88, 2, 1) 0%, rgba(255, 183, 147, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header10 {
+
+        padding: 50px 10px;
+
+        background: linear-gradient(90deg, rgba(237, 12, 78, 1) 0%, rgba(252, 205, 219, 1) 100%);
+    }
+
+    .primary-header11 {
+
+
+        padding: 50px 10px;
+
+        background: linear-gradient(90deg, rgba(206, 104, 216, 1) 0%, rgba(252, 205, 219, 1) 100%);
+    }
+
+    .primary-header12 {
+
+
+        background: linear-gradient(90deg, rgba(205, 220, 57, 1) 0%, rgba(221, 223, 205, 1) 100%);
+        padding: 50px 10px;
+    }
+
+
+
+    .primary-header13 {
+
+
+        background: linear-gradient(90deg, rgb(175, 153, 12) 0%, rgb(20, 81, 150) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header14 {
+
+
+        background: linear-gradient(90deg, rgb(82, 11, 215) 0%, rgba(148, 187, 233, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header16 {
+
+
+        background: linear-gradient(90deg, rgba(60, 188, 254, 1) 0%, rgba(249, 242, 246, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header15 {
+
+
+        background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header17 {
+
+
+        background: linear-gradient(90deg, rgb(212, 8, 15) 0%, rgba(251, 246, 249, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header18 {
+
+
+        background: linear-gradient(90deg, rgba(111, 125, 250, 1) 0%, rgba(225, 197, 140, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header19 {
+
+        background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header20 {
+
+
+        background: linear-gradient(0deg, rgba(248, 123, 126, 1) 0%, rgba(245, 218, 139, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header21 {
+
+        background: linear-gradient(0deg, rgba(6, 206, 174, 1) 0%, rgba(248, 123, 126, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header22 {
+
+        background: linear-gradient(90deg, rgba(45, 162, 108, 1) 0%, rgba(221, 240, 231, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header23 {
+
+        background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header24 {
+
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .primary-header25 {
+
+        background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
+        padding: 50px 10px;
+    }
+
+
+
+
+    .rating-star img {
+        width: 15px;
+        display: inline-block;
+    }
+
+    .card-1 {
+        box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        border: 0;
+    }
+
+    .course-card1 {
+        background: linear-gradient(90deg, rgba(5, 56, 51, 1) 0%, rgb(10, 230, 215) 100%);
+        padding: 50px 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .course-card2 {
+        padding: 50px 10px;
+        background: linear-gradient(90deg, rgba(60, 118, 214, 1) 0%, rgba(184, 206, 240, 1) 100%);
+    }
+
+    .course-card3 {
+
+        padding: 50px 10px;
+        background: linear-gradient(90deg, rgb(245, 146, 26) 0%, rgb(247, 194, 124) 100%);
+
+    }
+
+    .course-card4 {
+
+        background: linear-gradient(90deg, rgba(55, 78, 142, 1) 0%, rgba(165, 182, 215, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card5 {
+
+
+        background: linear-gradient(90deg, rgba(252, 45, 61, 1) 0%, rgb(242, 147, 162) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card6 {
+
+
+        background: linear-gradient(90deg, rgb(2, 79, 44) 0%, rgb(181, 240, 214) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card7 {
+
+
+        background: linear-gradient(90deg, rgb(120, 30, 30) 0%, rgb(209, 132, 132) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card8 {
+
+        background: linear-gradient(90deg, rgba(148, 32, 101, 1) 0%, rgba(234, 210, 224, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card9 {
+
+
+        background: linear-gradient(90deg, rgba(255, 88, 2, 1) 0%, rgb(243, 166, 128) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card10 {
+
+        padding: 50px 10px;
+
+        background: linear-gradient(90deg, rgba(237, 12, 78, 1) 0%, rgb(243, 175, 195) 100%);
+    }
+
+    .course-card11 {
+
+
+        padding: 50px 10px;
+
+        background: linear-gradient(90deg, rgb(220, 11, 239) 0%, rgba(252, 205, 219, 1) 100%);
+    }
+
+    .course-card12 {
+
+
+        background: linear-gradient(90deg, rgb(3, 1, 130) 0%, rgb(123, 121, 236) 100%);
+        padding: 50px 10px;
+    }
+
+
+
+    .course-card13 {
+
+
+        background: linear-gradient(90deg, rgb(20, 81, 150) 0%, rgb(134, 178, 227) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card14 {
+
+
+        background: linear-gradient(90deg, rgb(82, 11, 215) 0%, rgba(148, 187, 233, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card15 {
+
+
+        background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgb(248, 204, 108) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card16 {
+
+
+        background: linear-gradient(90deg, rgba(60, 188, 254, 1) 0%, rgb(228, 77, 163) 100%);
+        padding: 50px 10px;
+    }
+
+
+
+    .course-card17 {
+
+
+        background: linear-gradient(90deg, rgb(212, 8, 15) 0%, rgb(240, 176, 214) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card18 {
+
+
+        background: linear-gradient(90deg, rgb(43, 63, 243) 0%, rgb(167, 175, 247) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card19 {
+
+        background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card20 {
+
+
+        background: linear-gradient(90deg, rgba(248, 123, 126, 1) 0%, rgb(235, 197, 85) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card21 {
+
+        background: linear-gradient(90deg, rgb(2, 248, 158) 0%, rgb(2, 107, 14) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card22 {
+
+        background: linear-gradient(90deg, rgb(2, 72, 39) 0%, rgb(166, 239, 205) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card23 {
+
+        background: linear-gradient(90deg, rgb(243, 143, 20) 0%, rgb(242, 181, 101) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card24 {
+
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .course-card25 {
+
+        background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
+        padding: 50px 10px;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: var(--bs-nav-pills-link-active-color) !important;
+        background-color: var(--bs-nav-pills-link-active-bg) !important;
+    }
+</style>
+
+<body>
+
+    <!-- nav starts -->
+
+    <div class="nav-holder">
+        <nav class="navbar navbar-expand-lg py-0 col-lg-10  mx-auto">
+            <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
+                data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+                    <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="d-lg-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
+                    <i class="fa-solid fa-bars fa-xl text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                    <ul class="navbar-nav shadow1 ms-auto mb-0 bg-light overflow-hidden rounded-bottom-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Pay after Placement" class="nav-link" href="placement.html">PAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blog2.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- offcanvas navbar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
+        <div class="offcanvas-header p-0 px-2">
+            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white" href="index.html">
+                <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+            </a>
+            <button type="button" class="m-2 p-0 btn shadow-none border-0 text-danger me-0" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                <i class="fa-solid fa-xmark fa-xl"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body px-0 py-5 text-center">
+            <ul class="navbar-nav ms-auto overflow-hidden mb-0 rounded-bottom-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="placement.html">PAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog2.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- nav ends -->
+
+    <section class="hero-banner new-hero vh-500px header finisher-header text-center text-md-start text-white mb-5">
+        <div class="hero-vector1 d-none">
+            <img src="assets/imagesandvectors/vectors/vec-1.png" alt="">
+        </div>
+        <div class="container z-3 text-center">
+            <div class="row d-flex justify-content-center align-items-center flex-row-reverse flex-lg-row">
+                <div>
+                    <h1 data-aos="fade-up" data-aos-duration="500" class="">
+                        Our <span class="primary-color">Courses</span>
+                    </h1>
+                    <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-up" data-aos-duration="700">
+                        Navigate your career path with precision through our comprehensive IT courses, paving the way
+                        for
+                        success in the dynamic world of technology.<br class="d-none d-lg-block"> to help
+                        you
+                        obtain your dream Job in IT sector.</p>
+                    <nav data-aos="fade-up" data-aos-duration="800"
+                        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Courses</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- courses start  -->
+
+    <div class="container course">
+        <section class="pap-card">
+            <ul class="nav nav-pills mb-5 text-center justify-content-md-evenly justify-content-center my-5 text-capitalize p-10 m-0 w-100"
+                id="pills-tab" role="tablist ">
+
+                <div class="col-12 col-md d-flex justify-content-center">
+                    <li class="nav-item py-1 w-100 d-flex align-items-center justify-content-center" data-aos="fade-left"
+                        data-aos-duration="500" role="presentation">
+                        <button
+                            class="nav-link col-4 col-md-12  active border pap-card  py-2 px-5  bg-primary text-white"
+                            id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button"
+                            role="tab" aria-controls="pills-All" aria-selected="true">All
+                        </button>
+                    </li>
+                </div>
+
+
+                <div class="col-6 col-md justify-content-center">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-left"
+                        data-aos-duration="700" role="presentation">
+                        <button
+                            class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly custom-testing-style bg-primary text-white "
+                            id="pills-Testing-tab" data-bs-toggle="pill" data-bs-target="#pills-Testing" type="button"
+                            role="tab" aria-controls="pills-Testing" aria-selected="false">Testing</button>
+                    </li>
+                </div>
+
+                <div class="col-6 col-md justify-content-center">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-left"
+                        data-aos-duration="900" role="presentation">
+                        <button
+                            class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
+                            id="pills-Development-tab" data-bs-toggle="pill" data-bs-target="#pills-Development"
+                            type="button" role="tab" aria-controls="pills-Development"
+                            aria-selected="false">Development</button>
+                    </li>
+                </div>
+
+                <div class="col-6 col-md justify-content-center">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-left"
+                        data-aos-duration="1100" role="presentation">
+                        <button
+                            class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
+                            id="pills-Devops-tab" data-bs-toggle="pill" data-bs-target="#pills-Devops" type="button"
+                            role="tab" aria-controls="pills-Devops" aria-selected="false">DevOps</button>
+                    </li>
+                </div>
+
+                <div class="col-6 col-md">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-left"
+                        data-aos-duration="1300" role="presentation">
+                        <button
+                            class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
+                            id="pills-science-tab" data-bs-toggle="pill" data-bs-target="#pills-science" type="button"
+                            role="tab" aria-controls="pills-science" aria-selected="false">AI</button>
+                    </li>
+                </div>
+
+            </ul>
+
+
+            <div class="tab-content pb-5" id="pills-tabContent ">
+
+                <!-- ALL SECTIONS -->
+                <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab"
+                    tabindex="0">
+                    <div class="container-fluid">
+                        <div class="row g-5">
+
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/advancejava.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card14 text-white text-center">Advance Java</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">10000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 45 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/API-Postman.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card15 text-white text-center">API-Postman</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 20 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/API-Rest Assured.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card7 text-white text-center">API-Rest Assured</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">1000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 12 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/DBTesting.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card16 text-white text-center">DB Testing</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">7000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 48 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/Docker.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card13 text-white text-center">Docker</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">3000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 30 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/Git.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card5 text-white text-center">GIT</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">20000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 45 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/Jenkins.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card6 text-white text-center">Jenkins</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">7000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 60 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/manualtesting.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card3 text-white text-center">Manual Testing</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">9000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 70 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/maven.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card7 text-white text-center">Maven</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">500+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 12 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/pageobject.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card4 text-white text-center">Page Object Model</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">3000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 24 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/selenium.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card21 text-white text-center">Selenium</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">15000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 26 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/TestNG.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card20 text-white text-center">TestNG</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">8000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Development/java.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card11 text-white text-center">Java Fullstack</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">10000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 70 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Development/mean.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card12 text-white text-center">MEAN Stack</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">300+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 40 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Development/mern.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card7 text-white text-center">MERN Stack</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 50 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Development/python.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card9 text-white text-center">Python Fullstack</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">2000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 60 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Datascience&AI/Artificial.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card22 text-white text-center">Artificial-Intelligence</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Datascience&AI/Datascience.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card10 text-white text-center">Data Science</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 14 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Datascience&AI/Deeplearning.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card18 text-white text-center">Deep Learning</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">1000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 30 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="courses/Devops/Devops.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card23 text-white text-center">DevOps</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">2000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 64 LAKHS</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TESTING SECTIONS -->
+                <div class="tab-pane fade" id="pills-Testing" role="tabpanel" aria-labelledby="pills-Testing-tab"
+                    tabindex="0">
+                    <div class="container-fluid">
+                        <div class="row g-5">
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/API-Rest Assured.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card7 text-white text-center">API-Rest Assured</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">1000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 12 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/AWS-service.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card17 text-white text-center">AWS-Service</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">600+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 35 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/corejava.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card1 text-white text-center">Core Java</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">13000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/cucumber.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card2 text-white text-center">Cucumber</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">8000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 40 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/advancejava.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card14 text-white text-center">Advance Java</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">10000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 45 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/API-Postman.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card15 text-white text-center">API-Postman</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 20 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/DBTesting.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card16 text-white text-center">DB Testing</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">7000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 48 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/Docker.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card13 text-white text-center">Docker</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">3000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 30 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/Git.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card5 text-white text-center">GIT</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">20000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 45 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/Jenkins.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card6 text-white text-center">Jenkins</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">7000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 60 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/manualtesting.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card3 text-white text-center">Manual Testing</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">9000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 70 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/maven.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card7 text-white text-center">Maven</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">500+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 12 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/pageobject.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card4 text-white text-center">Page Object Model</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">3000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 24 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/selenium.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card21 text-white text-center">Selenium</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">15000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 26 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./courses/Software Testing/TestNG.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                    <div class="w-100 common-card-image">
+                                        <h4 class="course-card20 text-white text-center">Testing</h4>
+                                    </div>
+                                    <div class="w-100 p-4 common-card-content">
+                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                        <h6 class="mb-4 text-black">8000+ Successful Learners</h6>
+                                        <div class="w-100 d-flex align-items-center flex-wrap">
+                                            <div class="rating-block">
+                                                <div class="rating-star">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                        alt="Rating Icon">
+
+                                                </div>
+                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- DEVELOPMENT SECTIONS -->
+                <div class="tab-pane fade" id="pills-Development" role="tabpanel"
+                    aria-labelledby="pills-Development-tab" tabindex="0">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Software Development/java.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card11 text-white text-center">Java Fullstack</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">10000+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 70 LAKHS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Software Development/mean.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card12 text-white text-center">MEAN Stack</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">300+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 40 LAKHS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Software Development/mern.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card7 text-white text-center">MERN Stack</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 50 LAKHS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Software Development/python.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card9 text-white text-center">Python FullStack</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">2000+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 60 LAKHS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- DATASCIENCE SECTIONS -->
+                <div class="tab-pane fade" id="pills-science" role="tabpanel" aria-labelledby="pills-science-tab"
+                    tabindex="0">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Datascience&AI/Artificial.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card22 text-white text-center">Artificial-Intelligence</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Datascience&AI/Datascience.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card10 text-white text-center">Data Science</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 14 LAKHS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Datascience&AI/Deeplearning.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card18 text-white text-center">Deep Learning</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">1000+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 30 LAKHS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- DEVOPS SECTIONS -->
+                <div class="tab-pane fade" id="pills-Devops" role="tabpanel" aria-labelledby="pills-Devops-tab"
+                    tabindex="0">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-4">
+                            <a href="./courses/Devops/Devops.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <div class="w-100 common-card-image">
+                                    <h4 class="course-card23 text-white text-center">DevOps</h4>
+                                </div>
+                                <div class="w-100 p-4 common-card-content">
+                                    <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+                                    <h6 class="mb-4 text-black">2000+ Successful Learners</h6>
+                                    <div class="w-100 d-flex align-items-center flex-wrap">
+                                        <div class="rating-block">
+                                            <div class="rating-star">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+                                                <img src="https://assets.testleaf.com/assets/img/star.svg"
+                                                    alt="Rating Icon">
+
+                                            </div>
+                                            <p class="m-0 mt-2 text-secondary">EARN UPTO 64 LAKHS</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+
+    </div>
+
+
+    </section>
+
+    </div>
+
+    <div class="container company-logos py-5 overflow-hidden">
+        <p class="text-center text-capitalize  justify-content-center mt-4 display-6 linear-gradient-text fw-semibold"
+            data-aos="fade-up" data-aos-duration="7000">
+
+            Our Trained Students are
+            Hired By</p>
+        <div class="row">
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/2.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/3.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/4.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/5.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/6.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer starts------------ -->
+    <div id="footerElement"></div>
+    <!-- End Footer -->
+    <!-- //only comes last // -->
+
+    <div id="rocket-container" class="cursor" data-aos="zoom-in">
+        <!-- <img src="./assets/imagesandvectors/vectors/newww.gif" alt="Rocket" id="rocket"> -->
+        <dotlottie-player src="https://lottie.host/a3930b1d-eaf8-4fc4-a6b4-7ba7c5654523/tqWYmbEE3y.json"
+            background="transparent" speed="1" id="rocket" loop autoplay></dotlottie-player>
+
+    </div>
+
+    <div
+        class="position-fixed z-3 bottom-0 d-flex align-items-center flex-column justify-content-center overflow-visible">
+
+        <div class="h-250px">
+            <div class=" bell d-none overflow-visible position-relative" data-aos="fade-right" data-aos-duration="1000">
+                <dotlottie-player src="https://lottie.host/7eea6db9-f536-4f25-9f36-55e284faf207/afUTIVqW70.json"
+                    background="transparent" speed="1" style="width: 90px;" loop autoplay></dotlottie-player>
+                <span class="position-absolute top-0 start-50 d-none translate-middle badge rounded-pill bg-danger">
+                    New
+                </span>
+                <div class="cloud">
+                    <a href="placement.html"
+                        class="shadow1 cloud-text primary-text py-3 py-1 rounded-3 text-decoration-none d-block text-light">
+                        Pay After Placement
+                        <i class="fa-solid fa-caret-left"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="placement.html " class="popup text-decoration-none">
+                <span>P</span>
+                <span>a</span>
+                <span>y</span>
+                <span> </span>
+                <span>A</span>
+                <span>f</span>
+                <span>t</span>
+                <span>e</span>
+                <span>r</span>
+                <span> </span>
+                <span>P</span>
+                <span>l</span>
+                <span>a</span>
+                <span>c</span>
+                <span>e</span>
+                <span>m</span>
+                <span>e</span>
+                <span>n</span>
+                <span>t</span>
+            </a>
+            <div class="overflow-visible class-ico" data-aos="fade-right" data-aos-duration="1000"
+                data-bs-toggle="modal" data-bs-target="#contact">
+                <!-- <dotlottie-player src="https://lottie.host/c5554bef-2ea2-439f-ba03-150ec726c96e/0TSDow76Wl.json"
+                    background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>  -->
+
+                <dotlottie-player title="contact"
+                    src="https://lottie.host/a335969b-c315-4035-be6b-d18bed4b5831/l73y30ZFSl.json"
+                    background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>
+            </div>
+        </div>
+
+        <a href="https://api.whatsapp.com/send/?phone=%2B917845721438&text&app_absent=0" target="_blank" id="wa"
+            class="cursor" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="./assets/imagesandvectors/vectors/whatsapp.png" alt="whatsapp" class="img-fluid"
+                style="width:70px">
+        </a>
+    </div>
+
+    <!-- course Modal -->
+    <div class="modal fade" id="contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-5">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel">Contact Form
+                    </h1>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-3">
+                    <form id="contactForm">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>
+                            <label for="fname">Name <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <label for="email">Email <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength="10" required>
+                            <label for="phone">Phone Number <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
+                                style="height: 80px"></textarea>
+                            <label for="message">Message <span>(Optional)</span></label>
+                        </div>
+                        <div id="output" class="text-center"></div>
+                        <div class="text-center"> <button type="submit"
+                                class="btn btn-primary btn-block">Submit</button></div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav-link').on('click', function () {
+                // Remove the 'show' class from all tab contents
+                $('.tab-pane').removeClass('show');
+
+                // Add the 'show' class to the selected tab content
+                var targetId = $(this).data('bs-target').substring(1);
+                $(targetId).addClass('data-aos');
+            });
+        });
+        $('.nav-pills .nav-link').click(function () {
+            AOS.refresh();
+        });
+    </script>
+</body>
+
+</html>

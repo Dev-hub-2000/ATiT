@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog-Page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
+    <link rel="stylesheet" href="../assets/css/animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Blog2.css">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="individualBlogs">
+    <style>
+        .d-block {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .page-icon {
+            animation: slide1 1s ease-in-out infinite;
+            margin-left: 3px;
+            color: blueviolet;
+        }
+    </style>
+    <!-- nav starts -->
+    <div class="nav-holder">
+        <nav class="navbar navbar-expand-lg py-0 col-lg-10  mx-auto">
+            <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
+                data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="../index.html">
+                    <img src="../assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="d-lg-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
+                    <i class="fa-solid fa-bars fa-xl text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                    <ul class="navbar-nav shadow1 ms-auto mb-0 bg-light overflow-hidden rounded-bottom-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Pay after Placement" class="nav-link" href="../placement.html">PAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Blog2.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- offcanvas navbar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
+        <div class="offcanvas-header p-0 px-2">
+            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white" href="../index.html">
+                <img src="../assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+            </a>
+            <button type="button" class="m-2 p-0 btn shadow-none border-0 text-danger me-0" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                <i class="fa-solid fa-xmark fa-xl"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body px-0 py-5 text-center">
+            <ul class="navbar-nav ms-auto overflow-hidden mb-0 rounded-bottom-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a title="Pay after Placement" class="nav-link" href="../placement.html">PAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../Blog2.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- nav ends -->
+
+    <section class="hero-banner new-hero vh-500px header finisher-header text-center text-md-start text-white mb-5">
+        <div class="hero-vector1 d-none">
+            <img src="../assets/imagesandvectors/vectors/vec-1.png" alt="">
+        </div>
+        <div class="container z-3 text-center">
+            <div class="row d-flex justify-content-center align-items-center flex-row-reverse flex-lg-row">
+                <div>
+                    <h1 data-aos="fade-up" data-aos-duration="500" class="primary-header">
+                        <span class="primary-color">I Know You're </span>Probably Eager
+                    </h1>
+                    <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-up" data-aos-duration="700">
+                        Have clear sections with white space between each one. And watch your alignment - the content
+            should flow nicely down the page.
+                    </p>
+                    <nav data-aos="fade-up" data-aos-duration="800"
+                        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="../Blog2.html">Blog</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Grab</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================== -->
+    <div class="container">
+        <p class="linear-gradient-text py-4 fw-semibold display-6 text-center text-capitalize" data-aos="flip-right"
+            data-aos="600"> Hey there fresh graduates! </p>
+        <p class="fw-medium text-1" data-aos="fade-up" data-aos-duration="500"> Congrats on completing your degree! </p>
+        <p class="text-start fs-4" data-aos="fade-up" data-aos-duration="500"> I know you're probably eager to start
+            applying for jobs.
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500"> But before you start sending out your resume left and right, let's talk about how
+            to make it effective and stand out to recruiters. </p>
+        </p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-duration="700">
+        <p class="text-start fs-4" data-aos="fade-up" data-aos-duration="500">Your resume needs to look professional and be easy to skim. </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">Use a simple, standard font like Arial or Times New Roman in size 10-12 points. Bold and
+            increase the size slightly for your name and each section header. Include clear headings like Summary,
+            Education, Experience, Skills, etc. </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">When it comes to layout, you want to keep it clean and organised. </p>
+        <p class="text-start fs-4" data-aos="fade-up" data-aos-duration="500">Use bullet points instead of long paragraphs of text - this makes the information
+            easy to digest quickly. </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">Have clear sections with white space between each one. And watch your alignment - the content
+            should flow nicely down the page. </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">Now, what should you actually include on your fresher resume? Here are the key sections to
+            focus on:</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">Have clear sections with white space between each one. And watch your alignment - the content
+            should flow nicely down the page. </p>
+        <p class="text-1 my-2" data-aos="fade-up" data-aos-duration="500">Now, what should you actually include on your fresher resume? Here are the key sections
+            to focus on: </p>
+
+        <p class="text start fs-4 linear-gradient-text py-4" data-aos="fade-up" data-aos-duration="500">
+            ★ Summary/Objective
+        </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">This 2-3 line blurb at the very top gives a brief overview of who you are, what you're looking
+            for, and what
+            you have to offer. Keep it short, targeted, and intriguing to make the hiring manager want to keep reading.
+        </p>
+        <p class="text start fs-4 linear-gradient-text py-4" data-aos="fade-up" data-aos-duration="500">
+            ★Education
+        </p>
+        <p class="text-1 " data-aos="fade-up" data-aos-duration="500">Starting with your most recent degree, list your college education like this: Degree name,
+            Institution,
+            Location, Year of graduation. You can also include things like GPA, academic projects, scholarships, or
+            honours if they strengthen your profile</p>
+        <p class="text start fs-4 linear-gradient-text py-4" data-aos="fade-up" data-aos-duration="500">
+            ★ Experience
+
+        </p>
+        <p class=" text-1" data-aos="fade-up" data-aos-duration="500">Here are the part-time jobs, internships, freelancing gigs, and extracurricular activities.
+            Anything relevant
+            where you developed useful skills. Start with your most recent experience first. Include the name of your
+            company/organisation, your position title, employment dates, and bullet points of your responsibilities and
+            achievements.</p>
+        <p class="text start fs-4 linear-gradient-text py-4" data-aos="fade-up" data-aos-duration="500">
+            ★Skills
+        </p>
+        <p class=" text-1" data-aos="fade-up" data-aos-duration="500">A very crucial section! Include the technical skills and programs you know, along with soft
+            skills
+            like
+            communication, teamwork, leadership, etc. Break it down into categories and use bullets if you have a lot of
+            skills. Only list what you're truly proficient in. </p>
+
+        <p class="text start fs-4 linear-gradient-text py-4" data-aos="fade-up" data-aos-duration="500">
+            ★Certifications
+        </p>
+        <p class=" text-1" data-aos="fade-up" data-aos-duration="500">Got any specialised certifications related to your industry or role? Pop those in too. </p>
+        <p class="text start fs-4 linear-gradient-text py-4" data-aos="fade-up" data-aos-duration="500">
+            ★Volunteer Work
+        </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">If you've volunteered in meaningful ways, a brief description can highlight your interests and
+            what you care
+            about. Especially nice to see for freshers without a lot of formal experience yet.</p>
+        <p class="text-start fs-4" data-aos="fade-up" data-aos-duration="500">Now what should you avoid or be cautious about including? Let's go over some key
+            resume don'ts:</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Outdated contact info - double-check your phone number, email, and mailing address.</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Irrelevant personal details like age, religion, and marital status. (What are they going to
+            do with these details? just think…)</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Spelling or grammar errors - have multiple people proofread! (Pro tip: there are many free
+            tools available to do this)</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Overly designed formatting with weird text boxes, colours, charts, etc. Keep it simple!</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Hobbies unless they directly relate to the job.</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Old or irrelevant experience from many years ago. Keep it recent and relevant.</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Lies or exaggerations! Always be truthful.</p>
+        <p class="text-1"data-aos="fade-up" data-aos-duration="500">- Fancy resume templates - they can affect readability and ATS compatibility. </p>
+        <p class="text-1"data-aos="fade-up" data-aos-duration="500">- Long paragraphs or big blocks of text - use short bullets! (like how this blog post is
+            formatted)</p>
+        <p class="text-1"data-aos="fade-up" data-aos-duration="500">- A generic objective statement - customise it to each application.</p>
+        <p class="fw-medium text-1" data-aos="fade-up" data-aos-duration="500">When you're done drafting your fresher resume, make sure to get feedback from mentors,
+            professors, or career
+            counsellors. They can offer valuable advice on enhancing your resume even more. (Pro tip: At Alpha Code, we
+            have a dedicated team to polish your resume. Feel free to get in touch)</p>
+        <p class="linear-gradient-text py-4 fw-bold display-6 text-center text-capitalize" data-aos="fade-up" data-aos-duration="500" >Here are a few more tips for polishing up your resume:</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Review resume templates and samples online to see good examples for inspiration.</p>
+        <p class="text-1"data-aos="fade-up" data-aos-duration="500">- Tailor your resume to each job description - use keywords and relevant skills from the posting. </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Keep resume length to 1 page unless you have extensive experience to warrant 2 pages max.</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Use measurable accomplishments and numbers like "increased social media followers by 15%" not just generic
+            duties.</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Make sure to proofread repeatedly and fix any typos. Ask others to review.</p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">- Export as a PDF file - no weird formatting changes will occur.</p>
+        <p class="fw-medium text-1" data-aos="fade-up" data-aos-duration="500">
+            Whew, we covered a lot of ground on crafting effective fresher resumes! </p>
+        <p class="text-1" data-aos="fade-up" data-aos-duration="500">I know the job search process can feel overwhelming as a new grad. But taking the time to create a stellar,
+            polished resume will pay off. Recruiters spend just seconds scanning each one - you want your resume to grab
+            their attention right away. </p>
+            <p class="text-1" data-aos="fade-up" data-aos-duration="500">So be diligent about following these tips and you'll have an impressive resume ready for applying to companies and landing interviews in no time. 
+                Let us know if you have any other fresher resume questions! We are always happy to help. 
+                </p>
+                <p class="fw-medium text-1" data-aos="fade-up" data-aos-duration="500">Now go get that dream job!</p>
+    </div>
+
+
+
+
+  <!-- footer starts------------ -->
+ 
+  <div id="share-blog" class="" ></div>
+
+  <div class="related-post my-3 py-3" id="related-post">
+    <div class="container">
+        <div class="primary-header text-center pb-3">
+            <h2>Related Posts</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
+                <a href="./Mastering Interviews.html" class="">
+                <div class="box rounded-5 active">
+                    <img src="../assets/img/Blog/Blog3.png">
+                    <div class="box-content">                           
+                       <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Interviews</h2>                   
+                    </div>
+                </div>
+                </a>
+                <a href="Mastering Interviews.html" class="text-decoration-none blog-title blog-title">
+                    Common Pitfalls
+                    in Interviews
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+  <div id="footerElement"></div>
+ </div>
+<!-- End Footer -->
+<!-- Scripts -->
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./../swiper/swiper-bundle.min.js"></script>    
+<script src="../assets/js/shortcut.js"></script>
+<script src="../assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
+<script src="../assets/js/contact.js"></script>
+<script src="./../assets/js/footer.js"></script>
+<script src="./../assets/js/blogShare.js"></script>
+<script src="./../assets/js/script.js"></script>
+</body>
+
+</html>
